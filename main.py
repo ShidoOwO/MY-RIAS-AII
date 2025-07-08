@@ -10,8 +10,8 @@ app.secret_key = 'supersecret'
 app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
 
-API_KEY = "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"
-MODEL = "deepseek/deepseek-chat-v3-0324:free"
+API_KEY = "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"
+MODEL_ID = "deepseek/deepseek-chat-v3-0324:free"
 HISTORY_DIR = "history"
 if not os.path.exists(HISTORY_DIR):
     os.makedirs(HISTORY_DIR)
@@ -69,7 +69,7 @@ def chat():
         "Content-Type": "application/json"
     }
     data = {
-        "model": MODEL,
+        "model": MODEL_ID,
         "messages": memory[-10:]
     }
 
@@ -84,4 +84,4 @@ def chat():
         return jsonify({"reply": f"Error: {str(e)}"})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
