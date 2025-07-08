@@ -3,7 +3,7 @@ name = "python-template"
 version = "0.1.0"
 description = ""
 project.authors = [{ name = "Shido", email = "shidoitsuka931@gmail.com" }]
-requires-python = ">=3.11"
+requires-python = ">=3.11,<4.0"
 dependencies = [
     "flask-cors>=6.0.1",
     "flask>=3.1.1",
