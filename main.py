@@ -10,7 +10,7 @@ app.secret_key = 'supersecret'
 app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
 
-API_KEY = "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"
+API_KEY = "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"
 MODEL = "deepseek/deepseek-chat-v3-0324:free"
 HISTORY_DIR = "history"
 if not os.path.exists(HISTORY_DIR):
