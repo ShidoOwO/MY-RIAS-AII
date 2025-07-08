@@ -11,3 +11,4 @@ dependencies = [
     "flask-session>=0.8.0",
     "requests>=2.32.4",
 ]
+package-mode = false
