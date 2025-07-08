@@ -11,7 +11,7 @@ app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
 
 API_KEY = "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"
-MODEL_ID = "deepseek/deepseek-chat-v3-0324:free"
+MODEL = "deepseek/deepseek-chat-v3-0324:free"
 HISTORY_DIR = "history"
 if not os.path.exists(HISTORY_DIR):
     os.makedirs(HISTORY_DIR)
